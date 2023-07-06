@@ -1,8 +1,9 @@
 import React from 'react';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import About from '../components/About';
 import Analytics from '../components/Analytics';
-import Canvas from '../components/Canvas';
+import IndividualIntervalsExample from '../components/Carousel';
 import Features from '../components/Features';
 import Header from '../components/Header';
 import LazyShow from '../components/LazyShow';
@@ -25,25 +26,24 @@ const App = () => {
         </div>
         <MainHeroImage />
       </div>
-      <Canvas />
       <LazyShow>
         <>
           <Product />
-          <Canvas />
         </>
       </LazyShow>
       <LazyShow>
         <>
           <Features />
-          <Canvas />
         </>
       </LazyShow>
+      <div>
+        <IndividualIntervalsExample></IndividualIntervalsExample>
+      </div>
       <LazyShow>
         <Pricing />
       </LazyShow>
       <LazyShow>
         <>
-          <Canvas />
           <About />
         </>
       </LazyShow>
